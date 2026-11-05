@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <title>MRX Assistant — BY BOJCENKO</title>
+  <style>
+    :root { --bg:#080b14; --panel:#111827; --blue:#36a3ff; --orange:#ff8a24; --text:#f4f7ff; --muted:#aab5c8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--text); background:radial-gradient(ellipse at 80% 0%,#10284a 0,transparent 38%),var(--bg); font-family:Arial,Helvetica,sans-serif; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:22px min(7vw,90px); border-bottom:1px solid #ffffff12; }
+    .logo { font-weight:900; font-size:24px; letter-spacing:1px; }
+    .logo span { color:var(--blue); }
+    nav a { color:var(--muted); text-decoration:none; margin-left:24px; font-size:14px; }
+    nav a:hover { color:white; }
+    .hero { max-width:1100px; margin:auto; padding:100px 24px 85px; text-align:center; }
+    .tag { display:inline-block; border:1px solid #36a3ff66; color:#9bd3ff; border-radius:30px; padding:8px 14px; font-size:13px; background:#36a3ff12; }
+    h1 { font-size:clamp(42px,8vw,76px); line-height:1.02; margin:25px 0 18px; letter-spacing:-2px; }
+    h1 span { color:var(--blue); text-shadow:0 0 35px #168dff66; }
+    .hero p { max-width:650px; margin:0 auto; color:var(--muted); font-size:18px; line-height:1.7; }
+    .actions { margin-top:32px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:14px 22px; border-radius:12px; font-weight:700; text-decoration:none; }
+    .primary { background:linear-gradient(100deg,var(--blue),#1976d2); color:white; box-shadow:0 8px 30px #168dff33; }
+    .secondary { border:1px solid #ffffff30; color:white; }
+    section { max-width:1100px; margin:auto; padding:55px 24px; }
+    .section-title { text-align:center; font-size:32px; margin:0 0 12px; }
+    .section-sub { text-align:center; color:var(--muted); margin:0 auto 32px; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:linear-gradient(145deg,#151f31,#0e1421); border:1px solid #ffffff12; border-radius:18px; padding:25px; min-height:175px; }
+    .card .icon { font-size:28px; }
+    .card h3 { margin:15px 0 9px; }
+    .card p { color:var(--muted); line-height:1.55; margin:0; }
+    .download { text-align:center; background:linear-gradient(135deg,#102746,#111827); border:1px solid #36a3ff44; border-radius:24px; padding:42px 20px; }
+    .download p { color:var(--muted); line-height:1.6; }
+    .soon { display:inline-block; margin-top:12px; color:#ffd09c; background:#ff8a2418; border:1px solid #ff8a2455; padding:8px 13px; border-radius:20px; font-size:13px; }
+    footer { text-align:center; color:#8995a9; padding:35px 20px; border-top:1px solid #ffffff12; font-size:14px; }
+    footer strong { color:var(--orange); letter-spacing:1px; }
+    @media(max-width:720px) { header { padding:18px 20px; } nav { display:none; } .hero { padding:75px 20px 60px; } .cards { grid-template-columns:1fr; } section { padding:40px 20px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MRX <span>ASSISTANT</span></div>
+    <nav><a href="#features">Можливості</a><a href="#download">Завантаження</a><a href="#about">Про проєкт</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <span class="tag">ТВІЙ AI-ПОМІЧНИК</span>
+      <h1>Грай. Питай.<br><span>Відкривай більше.</span></h1>
+      <p>MRX Assistant — помічник для геймерів. Отримуй підказки, розбирайся з іграми та відкривай нові можливості разом з MRX.</p>
+      <div class="actions">
+        <a class="btn primary" href="#download">Завантаження</a>
+        <a class="btn secondary" href="#features">Можливості</a>
+      </div>
+    </div>
+
+    <section id="features">
+      <h2 class="section-title">Що вміє MRX Assistant?</h2>
+      <p class="section-sub">Основні функції та те, що планується додати.</p>
+      <div class="cards">
+        <article class="card"><div class="icon">💬</div><h3>AI-чат</h3><p>Став запитання та отримуй відповіді українською мовою.</p></article>
+        <article class="card"><div class="icon">🎮</div><h3>Ігровий помічник</h3><p>Поради для Minecraft, ETS2, Roblox, BeamNG.drive та інших ігор.</p></article>
+        <article class="card"><div class="icon">🖼️</div><h3>Робота з фото</h3><p>Можливість додавати зображення з пристрою — у планах.</p></article>
+        <article class="card"><div class="icon">🌐</div><h3>Пошук в інтернеті</h3><p>Пошук корисної інформації в мережі — у планах.</p></article>
+        <article class="card"><div class="icon">⚙️</div><h3>Просте налаштування</h3><p>Зрозумілий інтерфейс і налаштування програми.</p></article>
+        <article class="card"><div class="icon">🚀</div><h3>Розвиток MRX</h3><p>Нові функції з'являтимуться в наступних оновленнях.</p></article>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="download">
+        <h2 class="section-title">Спробуй MRX Assistant</h2>
+        <p>Інсталятор для Windows буде доступний після завершення розробки та перевірки програми.</p>
+        <span class="soon">ЗАВАНТАЖЕННЯ СКОРО</span>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">Створено для геймерів</h2>
+      <p class="section-sub">MRX Assistant — проєкт, який розробляється та поступово отримує нові можливості.</p>
+    </section>
+  </main>
+
+  <footer>MRX ASSISTANT <span>•</span> <strong>BY BOJCENKO</strong></footer>
+</body>
+</html>
